@@ -1,122 +1,137 @@
-*{ 
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    height: 100vh;
+body {
+  height: 100vh;
+  background-color: #CACACA;
 }
-/*
-header{
-    height: 10vh;
+
+/*Header*/
+.btnav {
+  color: #A52502;
 }
-main{
-    height: 70vh;
+
+/*Seccion 1 - Imagen Prin */
+.titimg {
+  font-family: "Moderustic", sans-serif;
 }
-footer{
-    height: 20vh;
-}
-*/
+
 /*seccion 2 - Propiedades destacadas - */
-
 .titulo_vtaalq {
-    text-align: center;
-    padding: 20px;
+  color: #390D02;
+  text-align: center;
+  padding: 20px;
+  font-family: "Moderustic", sans-serif;
 }
 
 .cuadros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 
 .casa {
-    position: relative;
-    border: 2px solid #b72b2d;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+  position: relative;
+  border: 2px solid #A52502;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: transform 0.3s;
 }
 
 .casa img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .casa .boton {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);    
-    color:white;
-    padding: 5px 10px;
-    font-size: 18px;
-    border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 3px;
 }
 
 .casa:hover {
-    transform: scale(1.05); /*agranda boton*/
+  transform: scale(1.05); /*agranda boton*/
 }
 
 .casa:hover .boton {
-    background-color: #b72b2d; 
+  background-color: #A52502;
 }
 
-/*Carrusel*/
-
-li{
-    list-style-type: none;
+/*secccion 3 Nuev. Lanz*/
+.btne {
+  background-color: #A52502;
+  color: #FFFFFF;
 }
 
-.slide img{
-   height: 600px;
-   width: 600px;
+/*sec 4 Carrusel*/
+li {
+  list-style-type: none;
+}
+
+.slide img {
+  height: 600px;
+  width: 600px;
 }
 
 /* ----- Propiedas destacadas hoja vta --------- */
-
-.casa .texto{
-
-    position:absolute;
-    top: 180px;
-    bottom: 20px;
-    left: 100px;
-    color: red;
-    /*background-color: grey;*/
-    padding: 30px;
-
-
+.casa .texto {
+  top: 180px;
+  bottom: 20px;
+  left: 100px;
+  color: #A52502;
+  padding: 30px;
 }
 
 .casa .botonv {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);    
-    color: white;
-    padding: 5px 10px;
-    font-size: 18px;
-    border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 3px;
 }
 
 .casa:hover .botonv {
-    background-color:black; 
+  background-color: #000B0D;
 }
 
+.card {
+  position: relative;
+  border: 2px solid #A52502;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
 
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
+.card:hover {
+  transform: scale(1.06);
+}
 
 /* ------ cambio formato pantalla grids-----*/
-
 @media screen and (max-width: 480px) {
-    .cuadros {
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 2fr;
-      
-    }
-
-    
+  .cuadros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
