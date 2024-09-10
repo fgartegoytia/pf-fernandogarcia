@@ -1,137 +1,119 @@
+/***************- Hoja Inicio - *******************/
 
-/*Seccion 1 - Imagen Prin */
-.titimg{
-    font-family:$fuente-tit ;
+/*Imagen Principal, Institucional */
+
+.titimg {
+  font-family: $fuente-tit;
 }
 
+/* sec Propiedades destacadas */
 
-/*seccion 2 - Propiedades destacadas - */
-
-.titulo_vtaalq {
-    color:$color-titulo;
-    text-align: center;
-    padding: 20px;
-    font-family:$fuente-tit;
+.titulo {
+  color: $color-titulo2;
+  text-align: center;
+  font-family: $fuente-tit;
 }
 
-.cuadros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
+.cuadroscasa {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-decoration: none;
+  border: 2px solid $color-boton1;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 
-.casa {
-    position: relative;
-    border: 2px solid $color-boton1;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: transform 0.3s ;
-}
+  &:hover {
+    transform: scale(1.05);
+    border-color: $color-boton2;
+  }
 
-.casa img {
+  .imgcasa {
     width: 100%;
-    height: auto;
     display: block;
-}
+  }
 
-.casa .boton {
+  .botn {
     position: absolute;
     bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);    
-    color:$color-interno;
+    left: 10px;
+    color: $color-interno;
+    background-color: $color-boton2;
     padding: 5px 10px;
-    font-size: 18px;
-    border-radius: 3px;
-}
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: $fuente-tit;
+    transition: background-color 0.3s ease;
+    }
 
-.casa:hover {
-    transform: scale(1.05); /*agranda boton*/
-}
+  &:hover .botn {
+    background-color: $color-boton1;
+  }
 
-.casa:hover .boton {
-    background-color:$color-boton1 ; 
+  .txboton {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
 }
 
 /*secccion 3 Nuev. Lanz*/
+
 .btne {
-    background-color:$color-boton1;
-    color: $color-interno;
+  background-color: $color-boton1;
+  color: $color-interno;
 }
 
 /*sec 4 Carrusel*/
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
-.slide img{
-   height: 600px;
-   width: 600px;
+.slide img {
+  height: 450px;
+  width: 300px;
 }
 
-/* ----- Propiedas destacadas hoja vta --------- */
+/*sec 4 video y texto*/
 
-.casa .texto{
-
-  
-
-    top: 180px;
-    bottom: 20px;
-    left: 100px;
-    color:$color-boton1;
-    padding: 30px;
-
-
+.video {
+  margin-right: 100px;
 }
 
-.casa .botonv {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);    
-    color: $color-interno;
-    padding: 5px 10px;
-    font-size: 18px;
-    border-radius: 3px;
+/***************- Hoja ventas - *******************/
+
+.textocuadros {
+  text-align: right;
+  color: $color-titulo2;
+  font-family: $fuente-tit;
+  text-decoration: none;
 }
 
-.casa:hover .botonv {
-    background-color:$color-boton2; 
+/***************- Hoja casa - *******************/
 
-}
+.icono-texto {
+  display: flex;
+  align-items: center;
+  margin: 5px;
 
-
-.card {
-    position: relative;
-    border: 2px solid #A52502;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: width 0.3s;
-  }
-  
-  .card img {
-    width: 100%;
+  .icono-img {
+    width: 60px;
     height: auto;
-    display: block;
   }
 
-  .card:hover {
-    transform: scale(1.06); 
+  .icono-numero {
+    font-size: 30px;
+    margin-left: 15px;
+    color:$color-titulo;
   }
-  
+}
 
+.imginterior {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  height: 100px;
+  margin-top: 10px;
+}
 
-/* ------ cambio formato pantalla grids-----*/
-
-@media screen and (max-width: 480px) {
-    .cuadros {
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 2fr;
-      
-    }
-
-    
+.imginterior:hover {
+  transform: scale(5);
+  z-index: 10;
 }
